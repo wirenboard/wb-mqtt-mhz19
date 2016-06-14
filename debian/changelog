@@ -1,0 +1,5 @@
+wb-mqtt-mhz19 (1.0) stable; urgency=medium
+
+  * Initial release. 
+
+ -- Evgeny Boger <boger@contactless.ru>  Fri, 25 Sep 2015 01:51:04 +0300

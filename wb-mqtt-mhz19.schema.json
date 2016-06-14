@@ -1,0 +1,36 @@
+{
+	"type": "object",
+	"title": "MH-Z19 CO2 sensor",
+	"configPath": "/etc/wb-mqtt-mhz19.conf",
+	"configFile": {
+		"path": "/etc/wb-mqtt-mhz19.conf",
+		"service": "wb-mqtt-mhz19"
+	},
+	"properties": {
+		"name": {
+			"type": "string",
+			"title": "MQTT device name",
+			"default": "MH-Z19 CO2 sensor",
+			"propertyOrder": 1
+		},
+		"port": {
+			"type": "string",
+			"title": "UART port",
+			"description" : "/dev/XXX",
+			"propertyOrder": 2
+		},
+		"mqtt_id" : {
+			"type" : "string",
+			"title" : "MQTT Device Id",
+			"default" : "mhz19",
+			"propertyOrder": 5
+		},
+		"poll_interval" : {
+			"type" : "number",
+			"minimum" : 2,
+			"default" : 10,
+			"propertyOrder": 6
+		}
+	},
+  	"defaultProperties" : ["poll_interval"]
+}

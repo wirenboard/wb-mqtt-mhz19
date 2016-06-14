@@ -1,0 +1,11 @@
+Source: wb-mqtt-mhz19
+Maintainer: Evgeny Boger <boger@contactless.ru>
+Section: misc
+Priority: optional
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 9), pkg-config
+
+Package: wb-mqtt-mhz19
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, mosquitto-clients, python-mosquitto, python-serial
+Description: MQTT driver for mhz19
